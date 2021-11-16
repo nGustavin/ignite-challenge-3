@@ -1,0 +1,46 @@
+// TODO
+@import '../styles/common.module.scss';
+
+.main{
+  max-width: $max-width;
+  margin: 0 auto;
+  height: calc(100vh - var(--header-size));
+}
+
+.postContainer{
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &:hover{
+    cursor: pointer;
+    >h1{
+      transition: all 0.2s;
+      color: var(--highlight);
+    }
+  }
+
+  >p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--body);
+    margin-bottom: 1rem;
+  }
+}
+
+.postFooter{
+  display: flex;
+  gap: 1.5rem;
+
+  >div{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--info);
+  }
+}

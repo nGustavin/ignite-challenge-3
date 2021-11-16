@@ -1,0 +1,10 @@
+@import '../../styles/common.module.scss';
+
+.headerContainer{
+  max-width: $max-width;
+  margin: 0 auto;
+  background: var(--background);
+  height: var(--header-size);
+  display: flex;
+  align-items: center;
+}
